@@ -156,3 +156,27 @@ body {
 		width: 100%;
 	}
 }
+
+@media (max-width:786px) {
+	.sidebar .logo {
+		margin: 10px;
+		width: 100px;
+		height: 30px;
+		background-size: 100%;
+	}
+	.sidebar .gnb {
+		position: absolute;
+		top:0;
+		right:0;
+	}
+
+	.sidebar .sns-nb {
+		display: none;
+	}
+	.contents {
+		padding-top: 50px;
+	}
+	.contents li {
+		width: 100%;
+	}
+}
