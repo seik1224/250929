@@ -1,0 +1,117 @@
+body,
+ul,
+li,
+h3,
+p {
+  margin: 0px;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+/*
+	1. 배경색 f4f4f4를 설정하고
+	큰 향수 이미지를 배경 이미지로 붙여주세요.
+
+    2. Sidebar를 만들어주세요.
+	너비값 300px
+
+	3. 메뉴에 hover하면 배경색을 검정색으로 바꿔주세요. 
+
+	4. 콘텐츠 영역을 만들어주세요.
+	너비값은 1000px
+
+	6. 태블릿 1024px 이하일때 반응형으로 바꿔주세요
+
+	7. 모바일 786px 이하일때 반응형으로 바꿔주세요
+*/
+
+body {
+	background-color: #f4f4f4;
+	background-image: url('images/big-perfume.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: right bottom;
+	background-size: 35%;
+}
+
+.sidebar {
+	background-color: #222;
+	position: fixed;
+	left:0;
+	top:0;
+
+	width: 300px;
+	/* 
+		vw : 뷰포트 너비값의 퍼센트 
+		vh : 뷰포트 높이값의 퍼센트 (dvh, lvh)
+	*/
+	height: 100%;
+}
+
+.sidebar .logo {
+	display: block;
+	background-image: url('images/logo.png');
+	width: 200px;
+	height: 60px;
+	text-indent: -9999px;
+	margin: 50px auto;	
+}
+
+.sidebar ul {
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.sidebar ul li {
+	
+}
+
+.sidebar ul li a {
+	display: block;
+	height: 30px;
+	line-height: 30px;
+}
+
+.sidebar ul li a:hover {
+	background-color: rgba(0,0,0,0.6);
+}
+
+.contents {
+	display: flex;
+	margin-left: 320px;
+	max-width:1000px;
+	flex-wrap: wrap;
+	gap:20px;
+}
+
+.contents li {
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+	position: relative;
+}
+
+.contents li .desc {
+	width: 100%;
+	position: absolute;
+	left:0;
+	bottom:0;
+	text-align: center;
+	padding:20px 0;
+	color:#8e4389;
+	background: linear-gradient(180deg,rgba(155, 42, 129, 0) 0%, rgba(251, 230, 255, 1) 100%);
+}
+
+.contents li .desc h3 {
+	margin-bottom: 5px;
+}
